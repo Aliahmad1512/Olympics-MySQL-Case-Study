@@ -204,7 +204,26 @@ order by 2 desc
 limit 5;
 
 
-														/*OLYMPICS CASE STUDY*/
+/*Participants who played multiple times and their number of medals won.*/
+select temptable.Name, count(temptable.Name) as TimesParticipated, medal
+from
+(select id,Name,count(Medal) as MedalsWon
+        from athlete_events
+        where (Medal<>'None' and Team='United States')
+        group by Name
+        having MedalsWon >= 9
+        order by MedalsWon desc) as temptable LEFT JOIN athlete_events ON temptable.ID=athlete_events.ID
+        where medal in ("gold", "silver", "bronze")
+group by temptable.Name
+order by TimesParticipated desc;
+
+
+
+
+
+
+
+							       /*OLYMPICS CASE STUDY*/
 /*#################################################################################################################################################*/
 
 
