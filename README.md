@@ -1,4 +1,4 @@
-# Olympics-MySQL-Case-Study
+# Olympics | MySQL | Case-Study | Data Analysis | IvyPro
 120 years of Olympic history: athletes and results
 Basic bio data on athletes and medal results from Athens 1896 to Rio 2016.
 This is a historical dataset on the modern Olympic Games, including the games from Athens 1896 to Rio 2016 (120 years of Olympic history). This dataset provides an opportunity to ask questions on how Olympics have  evolved over time for female, analysis about the participation and performance of athletes and a detailed analysis about the countries that have highest number of participants and medals.
